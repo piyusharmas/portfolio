@@ -2,29 +2,55 @@ import React from 'react';
 
 export default function Education() {
   const eduData = [
-    { year: "2018 - 2021", degree: "High School Degree", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..." },
-    { year: "2021 - 2024", degree: "Bachelor's Degree", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..." },
-    { year: "2024 - 2026", degree: "Master's Degree", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..." }
+    { 
+      year: "Aug 2023 - May 2027", 
+      degree: "Bachelors of Technology, Computer Science Engg.", 
+      institution: "Manav Rachna University, Faridabad",
+      desc: "Currently pursuing B.Tech with a CGPA of 7.89." 
+    },
+    { 
+      year: "2023", 
+      degree: "Senior Secondary", 
+      institution: "Scholars Pride, Faridabad",
+      desc: "Completed with an aggregate score of 80%." 
+    },
+    { 
+      year: "2021", 
+      degree: "Secondary", 
+      institution: "Scholars Pride, Faridabad",
+      desc: "Completed with an aggregate score of 89%." 
+    }
   ];
 
   return (
-    <div className="container py-5">
-      <h2 className="text-success fw-bold mb-4">EDUCATION</h2>
-      <div className="timeline-container ps-4">
-        {eduData.map((item, index) => (
-          <div key={index} className="timeline-item mb-4 position-relative">
-            {/* The Dot */}
-            <div className="timeline-dot"></div>
-            
-            {/* The Card */}
-            <div className="card edu-card border-0 shadow-sm p-3">
-              <span className="text-success small fw-bold">{item.year}</span>
-              <h5 className="fw-bold mt-1">{item.degree}</h5>
-              <p className="text-muted small mb-0">{item.desc}</p>
+    <section id="education" className="py-5 bg-white">
+      <div className="container">
+        {/* Centered Heading with Theme Underline */}
+        <div className="text-center mb-5">
+          <h2 className="display-6 fw-bold border-bottom border-warning border-4 d-inline-block pb-2">
+            Education
+          </h2>
+        </div>
+
+        <div className="timeline-container ps-4 position-relative">
+          {eduData.map((item, index) => (
+            <div key={index} className="timeline-item mb-5 position-relative">
+              {/* Theme-colored Dot */}
+              <div className="timeline-dot shadow-sm"></div>
+              
+              {/* Education Card with Real Data */}
+              <div className="card edu-card border-0 shadow-sm p-4 bg-white">
+                <span className="text-muted small fw-bold text-uppercase mb-2 d-block">
+                  {item.year}
+                </span>
+                <h4 className="fw-bold mt-1" style={{ color: '#ff6b00' }}>{item.degree}</h4>
+                <h6 className="fw-semibold text-secondary">{item.institution}</h6>
+                <p className="text-muted mb-0 mt-2">{item.desc}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
