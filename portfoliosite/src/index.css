@@ -310,3 +310,87 @@ ul li::marker {
   border-radius: 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Add padding to sections so the sticky navbar doesn't cover headings */
+section {
+  scroll-margin-top: 80px;
+}
+
+.project-section {
+  background-color: #ffffff;
+}
+
+/* Custom Scrollbar for the Horizontal Tray */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ff6b00; /* Signature Theme Color */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #e66000;
+}
+
+/* Ensure cards don't shrink in the flex container */
+.project-section .col-lg-4 {
+  flex: 0 0 auto;
+}
+
+/* Heading animation */
+.project-section h2 {
+  transition: color 0.3s ease;
+}
+
+.project-section h2:hover {
+  color: #ff6b00;
+}
+
+/* Custom Card Sizing for Descriptions */
+.project-section .col-md-5 {
+  flex: 0 0 auto;
+  width: 380px; /* Slightly wider cards for better text readability */
+}
+
+@media (max-width: 576px) {
+  .project-section .col-md-5 {
+    width: 300px;
+  }
+}
+
+.project-hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* Custom Scrollbar using theme orange */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ff6b00;
+  border-radius: 10px;
+}
+
+.project-hover-card .btn:hover {
+  background-color: #ff6b00 !important;
+  color: #fff !important;
+  transition: 0.3s ease;
+}
+
+/* Ensuring cards have equal height even with varying text lengths */
+.project-section .card-body {
+  display: flex;
+  flex-direction: column;
+}

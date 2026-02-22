@@ -1,44 +1,63 @@
 import React from 'react';
 import ProjectCard from './pcards/pcard';
+import credonImg from '../assets/credon.png';
+import bf from '../assets/bf.png';
+import bys from '../assets/bys.png';
 
 export default function ProjectPage() {
   const projects = [
-    { title: "Responsify", subtitle: "Breakpoint: 768px", details: "A simple tool which allows you to test your responsive websites." },
-    { title: "Featured Image Notes", subtitle: "WordPress Plugin", details: "Adds notes to your Featured Image meta box for specific post types." },
-    { title: "jQuery Fixed Header", subtitle: "Responsive UI", details: "A jQuery plugin to fix a header to the top of the window." },
-    { title: "jQuery Floating Label", subtitle: "Form UI", details: "Turns an input placeholder into a floating form label." }
+    { 
+      title: "Credon", 
+      subtitle: "Full-Stack Trading Dashboard", 
+      details: "High-performance MERN simulator featuring real-time market position simulation and interactive portfolio data visualization using Chart.js.",
+      image: credonImg,
+      link: "https://credondashboard.onrender.com/" // Your project link here
+    },
+    { 
+      title: "Best Friend", 
+      subtitle: "Safety-First AI Companion", 
+      details: "AI tool with Groq LLM integration. Features real-time crisis detection and automated UI lock/tone-shift during high-risk triggers.",
+      image: bf,
+      link: "https://frontend-gvrx.onrender.com/"
+    },
+    { 
+      title: "Book Your Stay", 
+      subtitle: "Marketplace Platform", 
+      details: "Airbnb-style engine with Node.js and MongoDB. Handles full CRUD, secure authentication, and Cloudinary image management.",
+      image: bys,
+      link: "https://book-your-stay-yv2q.onrender.com/"
+    }
   ];
 
   return (
-    <div className="container-fluid bg-light py-5">
+    <section id='projects' className="project-section py-5 bg-white">
       <div className="container">
-        {/* Section Header */}
         <div className="text-center mb-5">
-          <h1 className="display-5 fw-bold font-monospace italic">Projects</h1>
-          <hr className="w-25 mx-auto" />
+          <h2 className="display-6 fw-bold border-bottom border-warning border-4 d-inline-block pb-2">
+            Featured Projects
+          </h2>
         </div>
 
-        {/* Horizontal Tray */}
         <div className="row flex-nowrap overflow-auto pb-4 custom-scrollbar">
           {projects.map((proj, index) => (
-            <div key={index} className="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div key={index} className="col-12 col-sm-6 col-md-5 col-lg-4">
               <ProjectCard 
-                image="https://via.placeholder.com/300x200" // Replace with your project screenshots
+                image={proj.image} 
                 title={proj.title}
                 subtitle={proj.subtitle}
                 details={proj.details}
+                link={proj.link} // Passing the link to the card
               />
             </div>
           ))}
         </div>
 
-        {/* Footer Button - Matching your reference */}
         <div className="text-center mt-4">
-          <button className="btn btn-outline-dark px-4 py-2 shadow-sm">
-            <i className="bi bi-github me-2"></i> See All Projects
-          </button>
+          <a href="https://github.com/piyusharmas" target="_blank" rel="noreferrer" className="btn btn-outline-dark rounded-pill px-5 py-2 shadow-sm fw-bold">
+            <i className="bi bi-github me-2"></i> Explore More on GitHub
+          </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

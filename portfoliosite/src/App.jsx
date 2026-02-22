@@ -6,6 +6,7 @@ import Projectpage from './section/projectpage'
 import Skills from './section/tools'
 import Experience from './section/experience'
 import Positions from './section/por'
+import Footer from './section/footer'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Skills/>
       <Experience/>
       <Positions/>
+      <Footer/>
     </>
   )
 }

@@ -1,18 +1,15 @@
 import React from 'react';
 
 export default function Navbar() {
-  // Fix: Path points to the 'public' folder directly
   const resumeUrl = "/resume.pdf"; 
 
   const handleResumeClick = (e) => {
-    // Opens a preview in a new tab
     window.open(resumeUrl, '_blank');
   };
 
   return (
     <nav className="navbar navbar-expand-lg bg-white sticky-top shadow-sm py-3">
       <div className="container">
-        {/* Brand matching Home Page Style */}
         <a className="navbar-brand fw-bold fs-4" href="#">
           Piyush <span style={{ color: '#ff6b00' }}>Portfolio</span>
         </a>
@@ -27,14 +24,13 @@ export default function Navbar() {
         </button>
 
         <div className="collapse navbar-collapse" id="portfolioNavbar">
-          {/* ms-auto shifts everything to the right side */}
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center fw-medium gap-lg-3">
+            {/* Added Smooth Links matching your component IDs */}
             <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
             <li className="nav-item"><a className="nav-link" href="#education">Education</a></li>
             <li className="nav-item"><a className="nav-link" href="#skills">Technical Skills</a></li>
             <li className="nav-item"><a className="nav-link" href="#experience">Experience</a></li>
             
-            {/* Resume: Automatic Download + View */}
             <li className="nav-item">
               <a 
                 className="nav-link text-primary fw-bold" 
@@ -47,7 +43,6 @@ export default function Navbar() {
               </a>
             </li>
 
-            {/* Contact: Opens Gmail client */}
             <li className="nav-item ms-lg-2">
               <a 
                 className="btn btn-dark rounded-pill px-4 shadow-sm text-white" 

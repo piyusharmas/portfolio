@@ -36,7 +36,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="skills-section py-5 bg-white text-dark">
+    <section className="skills-section py-5 bg-white text-dark" id='skills'>
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="display-6 fw-bold border-bottom border-warning border-4 d-inline-block pb-2">

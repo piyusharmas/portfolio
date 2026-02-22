@@ -30,23 +30,23 @@ export default function About() {
             {/* Updated Social Icons with LeetCode, GFG, and Gmail */}
             <div className="d-flex gap-3 mt-4 flex-wrap">
               {/* LinkedIn */}
-              <a href="#" className="btn btn-dark rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '45px', height: '45px' }}>
+              <a href="https://www.linkedin.com/in/piyusharmas05/" className="btn btn-dark rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '45px', height: '45px' }}>
                 <i className="bi bi-linkedin"></i>
               </a>
               {/* GitHub */}
-              <a href="#" className="btn btn-dark rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '45px', height: '45px' }}>
+              <a href="https://github.com/piyusharmas" className="btn btn-dark rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '45px', height: '45px' }}>
                 <i className="bi bi-github"></i>
               </a>
               {/* LeetCode (Using a custom icon or generic code icon) */}
-              <a href="#" title="LeetCode" className="btn btn-dark rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '45px', height: '45px' }}>
+              <a href="https://leetcode.com/u/piyusharmas/" title="LeetCode" className="btn btn-dark rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '45px', height: '45px' }}>
                 <i className="bi bi-code-slash"></i>
               </a>
               {/* GeeksforGeeks (Represented by terminal icon) */}
-              <a href="#" title="GeeksforGeeks" className="btn btn-dark rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '45px', height: '45px' }}>
+              <a href="https://www.geeksforgeeks.org/profile/piyushar9r1d" title="GeeksforGeeks" className="btn btn-dark rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '45px', height: '45px' }}>
                 <i className="bi bi-terminal-fill"></i>
               </a>
               {/* Gmail */}
-              <a href="mailto:yourname@gmail.com" className="btn btn-dark rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '45px', height: '45px' }}>
+              <a href="mailto:piyusharmas2005@gmail.com" className="btn btn-dark rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '45px', height: '45px' }}>
                 <i className="bi bi-envelope-fill"></i>
               </a>
             </div>
