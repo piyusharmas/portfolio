@@ -18,13 +18,13 @@ export default function About() {
             <h4 className="mb-4 d-flex flex-wrap gap-2 align-items-center">
               I Am Into 
               <span className="text-danger fw-bold border-end border-danger border-3 pe-2 ms-2">
-                FullStack Development | AI & ML Engineer | Deep Learning Specialist
+                FullStack Development | AI & ML Engineer
               </span>
             </h4>
 
             <p className="lead text-secondary mb-5" style={{ maxWidth: '600px' }}>
-              Specializing in the MERN stack and Computer Vision. I build intelligent web applications 
-              using React, Node.js, and TensorFlow.
+              Specializing in the MERN stack and ML Algorithms. I build intelligent web applications 
+              using React, Node.js, and Python.
             </p>
 
             {/* Updated Social Icons with LeetCode, GFG, and Gmail */}

@@ -11,7 +11,7 @@ export default function Footer() {
           <h3 className="fw-bold">
             Piyush <span style={{ color: '#ff6b00' }}>Sharma</span>
           </h3>
-          <p className="text-muted">Specializing in MERN stack and Computer Vision.</p>
+          <p className="text-muted">Specializing in MERN stack and ML Algorithms</p>
         </div>
 
         {/* Social Links - Matching Hero section style */}
