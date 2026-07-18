@@ -7,11 +7,11 @@ import bys from '../assets/bys.png';
 export default function ProjectPage() {
   const projects = [
     { 
-      title: "Credon", 
-      subtitle: "Full-Stack Trading Dashboard", 
-      details: "High-performance MERN simulator featuring real-time market position simulation and interactive portfolio data visualization using Chart.js.",
-      image: credonImg,
-      link: "https://credondashboard.onrender.com/" // Your project link here
+      title: "Book Your Stay", 
+      subtitle: "Marketplace Platform", 
+      details: "Airbnb-style engine with Node.js and MongoDB. Handles full CRUD, secure authentication, and Cloudinary image management.",
+      image: bys,
+      link: "https://bys-32aj.onrender.com/"
     },
     { 
       title: "Best Friend", 
@@ -21,12 +21,13 @@ export default function ProjectPage() {
       link: "https://frontend-gvrx.onrender.com/"
     },
     { 
-      title: "Book Your Stay", 
-      subtitle: "Marketplace Platform", 
-      details: "Airbnb-style engine with Node.js and MongoDB. Handles full CRUD, secure authentication, and Cloudinary image management.",
-      image: bys,
-      link: "https://book-your-stay-yv2q.onrender.com/"
-    }
+      title: "Credon", 
+      subtitle: "Full-Stack Trading Dashboard", 
+      details: "High-performance MERN simulator featuring real-time market position simulation and interactive portfolio data visualization using Chart.js.",
+      image: credonImg,
+      link: "https://credondashboard.onrender.com/" // Your project link here
+    },
+    
   ];
 
   return (
